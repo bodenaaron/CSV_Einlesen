@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2" assembly="CSV Einlesen" namespace="CSV_Einlesen">
+
+  <class name = "Projekt" table="tblProjekte">
+    <id name = "id" column="idProjekt"/>
+
+    <set name = "auftraege" table = "tblAuftraege">
+      <key column = "`idAuftrag´"/>
+      <one-to-many class = "DBAuftrag"/>
+    </set>
+
+    <property name="bezeichnung" column="Projekt"/>
+
+
+    
+    
+    
+    
+  </class>
+
+</hibernate-mapping>

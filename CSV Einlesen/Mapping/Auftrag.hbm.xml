@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2" assembly="CSV Einlesen" namespace="CSV_Einlesen">
+
+  <class name = "DBAuftrag" table="tblAuftraege">
+    <id name = "id" column="idAuftrag">
+      <generator class = "identity"/>
+    </id>
+    <property name = "BAFA_ID" column="Requestnummer"/>
+    <property name = "SMAuftrag_TCOM" column="SM_Nummer"/>    
+    <many-to-one name = "Status" column="idWMSTIStatus"/>    
+    <property name = "Teilauftragsfall_TI" column="[Auftragsfall TI]"/>
+    <property name = "Auftragskurzbeschreibung" column="Bezeichnung"/>    
+    <property name = "BAFA_betriebsbereit_korr" column="BAFA_korrigiert"/>                                
+    <property name = "ONKZ" column="Ortsnetz"/>                               
+    <property name = "AsB" column="ASB"/>                                                               
+    <property name = "KD_Strasse" column="[KD Straße]"/>
+    <property name = "KD_HsNr" column="[KD HsNr]"/>
+    <property name = "KD_Zusatz" column="[KD Zusatz]"/>
+    <property name = "KD_PLZ" column="[KD PLZ]"/>
+    <property name = "KD_Ort" column="[KD Ort]"/>                           
+    <property name = "Mont_A_Strasse" column="Strasse"/>                     
+    <property name = "Mont_A_HsNr" column="Hausnummer"/>                        
+    <property name = "Mont_A_Zusatz_Str" column="[Mont A Zusatz Str]"/> 
+    <property name = "Mont_A_Ort" column="Ort"/>
+    <property name = "Langtext_Bemerkung_Vorsystem" column = "Langtext"/>
+    <property name = "bearbeiter" column="idBearbeiter"/>
+    <property name="auftraggeber" column="idAuftraggeber"/>
+    <many-to-one name ="Projekt" column ="idProjekt"/>
+    
+    
+    <!--<property name = "Mont_A_Gebaeudeteil" column=""/>                
+    <property name = "Mont_A_Geb_Zusatz" column=""/>                 
+    <property name = "Mont_A_Raum" column=""/>                       
+    <property name = "Ressortinterne_Vermerke" column=""/>            
+    <property name = "Bemerkung_zum_FA" column=""/>           
+    <property name = "EndSZ" column=""/>                              
+    <property name = "FSZ_A" column=""/>                              
+    <property name = "Relevanz_AA_FA" column=""/>                     
+    <property name = "BAFA_betriebsbereit" column=""/>                
+    <property name = "BAFA_abgeschlossen" column=""/>                 
+    <property name = "Storno_Flag" column=""/>      
+    <property name = "LSZ" column=""/>
+    <property name = "LSZ_Zusatz" column=""/>
+    <property name = "VPSZ_A" column=""/>
+    <property name = "Beauftragendes_Ressort" column=""/>
+    <property name = "Auftragseingang_Ressort" column=""/>
+    <property name = "Technisch_Fertig" column=""/>
+    <property name = "Aktuelle_Gruppe" column=""/>
+    <property name = "Aktueller_Bearbeiter" column=""/>
+    <property name = "Auftragsnummer_AG" column=""/>
+    <property name = "Letzter_Bearbeiter" column=""/>-->             
+
+
+    
+    
+    
+    
+  </class>
+
+</hibernate-mapping>
