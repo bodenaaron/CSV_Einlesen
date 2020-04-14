@@ -85,7 +85,7 @@ namespace CSV_Einlesen
         private void MainForm_Load(object sender, EventArgs e)
         {
             // TODO: Diese Codezeile lädt Daten in die Tabelle "eictronic_V1_1DataSet.tblProjekte". Sie können sie bei Bedarf verschieben oder entfernen.
-            this.tblProjekteTableAdapter.Fill(this.eictronic_V1_1DataSet.tblProjekte);
+            //this.tblProjekteTableAdapter.Fill(this.eictronic_V1_1DataSet.tblProjekte);
 
         }
 
