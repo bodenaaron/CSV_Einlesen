@@ -114,5 +114,10 @@ namespace CSV_Einlesen
         {
             cmb_projekt.BackColor = Color.White;
         }
+
+        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }

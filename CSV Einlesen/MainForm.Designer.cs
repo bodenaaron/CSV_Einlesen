@@ -83,6 +83,7 @@
             this.table.Name = "table";
             this.table.Size = new System.Drawing.Size(1827, 868);
             this.table.TabIndex = 3;
+            this.table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellContentClick);
             // 
             // import
             // 
@@ -129,8 +130,7 @@
             this.cmb_projekt.Location = new System.Drawing.Point(925, 13);
             this.cmb_projekt.Name = "cmb_projekt";
             this.cmb_projekt.Size = new System.Drawing.Size(259, 21);
-            this.cmb_projekt.TabIndex = 6;            
-            
+            this.cmb_projekt.TabIndex = 6;
             // 
             // MainForm
             // 
