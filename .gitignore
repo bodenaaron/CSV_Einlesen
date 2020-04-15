@@ -12,6 +12,7 @@
 *.cfg.xml
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.cfg.xml
 
 # Build results
 [Dd]ebug/
